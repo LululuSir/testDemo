@@ -72,7 +72,7 @@
     
     // image url
     //    NSString *picUrl = [NSString stringWithFormat:@"https://gratisography.com/pictures/%lu_1.jpg", 400+picIndex];
-    NSString *picUrl = [NSString stringWithFormat:@"https://cdn.gratisography.com/photos/%luH.jpg", 400+picIndex];
+    NSString *picUrl = [NSString stringWithFormat:@"https://gratisography.com/fullsize/gratisography-%luH.jpg", 400+picIndex];
     UIImage *image = [self imageWithUrl:[NSURL URLWithString:picUrl]];
     [self.picMemorys appendFormat:@"%lu - %f\t", picIndex+1, image.size.width*image.size.height*4/1024.f/1024.f];
     
